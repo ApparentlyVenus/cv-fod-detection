@@ -4,7 +4,7 @@ Real-time foreign object debris (FOD) detection using a fine-tuned YOLOv8n model
 Built as part of my computer vision learning path while applying for an embedded CV role.
 Trained on actual airport runway imagery, exported to ONNX for embedded deployment.
 
-![Live demo](assets/preview.png)
+![Live demo](assets/live-demo.png)
 
 ---
 
