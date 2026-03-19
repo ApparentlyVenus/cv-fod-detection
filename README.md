@@ -14,6 +14,8 @@ This is a personal learning project built on a laptop over a few days. It was tr
 
 The goal was to get hands-on with PyTorch, object detection pipelines, and the ONNX export workflow relevant to embedded/SoC deployment — not to build a production system. Do not use this to detect FOD on an actual runway, OBVIOUSLY!
 
+---
+
 ## What is FOD?
 
 Foreign Object Debris — nuts, bolts, metal fragments, anything that ends up on an airport runway and shouldn't be there. A single bolt can destroy a jet engine on takeoff.
