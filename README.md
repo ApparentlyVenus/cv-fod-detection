@@ -40,9 +40,9 @@ Published research using YOLOv8 variants on airport FOD datasets reports mAP@0.5
 ## Results
 
 ![results](assets/results.png)
-*Results of the training/fine tuning*
-
 <div align="center">
+
+*Results of the training/fine tuning*
 
 | Metric | Value |
 |--------|-------|
