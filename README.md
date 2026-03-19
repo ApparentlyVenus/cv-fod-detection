@@ -52,7 +52,7 @@ Published research using YOLOv8 variants on airport FOD datasets reports mAP@0.5
 | Training time | 38 min on RTX 2050 4GB |
 | ONNX export | 12.3MB |
 
-Training ran for 50 epochs on a laptop GPU. The model is a YOLOv8n fine-tuned on domain-specific data. The mAP@0.5 of 92.8% sits in line with modified YOLOv8 variants published in research on this exact problem.
+Training ran for 50 epochs on a laptop GPU. The model is a YOLOv8n fine-tuned on the FOD-i2kfx dataset. The mAP@0.5 of 92.8% sits in line with modified YOLOv8 variants published in research on this exact problem.
 
 Images from the dataset, a live demo image, and the results of the training are published in the `assets/` directory.
 
