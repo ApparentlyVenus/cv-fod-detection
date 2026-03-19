@@ -2,9 +2,13 @@
 
 Real-time foreign object debris (FOD) detection using a fine-tuned YOLOv8n model.
 
-![Live demo](assets/live-demo.png)
-<center>*One of the screws is.. screwing me over...*</center>
+<div align="center">
 
+![Live demo](assets/demo.png)
+
+*One of the screws is.. screwing me over...*
+
+</div>
 ---
 
 ## Disclaimer
