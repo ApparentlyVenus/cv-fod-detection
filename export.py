@@ -1,6 +1,7 @@
 from ultralytics import YOLO
 import time
 import torch
+import os
 
 
 model = YOLO('runs/detect/runs/fod/weights/best.pt')
@@ -28,4 +29,4 @@ onnx_ms = (time.perf_counter() - start) / 100 * 1000
 print(f"PyTorch inference:  {pytorch_ms:.2f}ms per image")
 print(f"ONNX inference:     {onnx_ms:.2f}ms per image")
 print(f"\nONNX file saved to: runs/detect/runs/fod/weights/best.onnx")
-print(f"Model size: {__import__('os').path.getsize('runs/detect/runs/fod/weights/best.onnx') / 1e6:.1f}MB")
+print(f"Model size: {os.path.getsize('runs/detect/runs/fod/weights/best.onnx') / 1e6:.1f}MB")
