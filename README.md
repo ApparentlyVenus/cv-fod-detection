@@ -1,9 +1,13 @@
 # FOD Detection 
 
-Real-time foreign object debris (FOD) detection using a fine-tuned YOLOv8n model.
+Real-time foreign object debris (FOD) detection using a fine-tuned YOLOv8n model. Fine tuned right here on my laptop!
 
-![Live demo](assets/live-demo.png)
-*one of the screws is.. screwing me over...*
+<div align="center">
+  
+  ![Live demo](assets/live-demo.png)
+  
+  *one of the screws... is screwing me over*
+</div>
 
 ---
 
