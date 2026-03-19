@@ -9,7 +9,7 @@ Real-time foreign object debris (FOD) detection using a fine-tuned YOLOv8n model
 
 ## Disclaimer
 
-This is a personal learning project built on a laptop over a few days. It was trained on a public dataset used in academic research, tested through a webcam pointed at objects on a desk, and is not validated for any real-world safety use.
+This is a personal learning project built on a laptop over a few days. It was trained on a small public dataset (different than the one used in academic research), tested through a webcam pointed at objects on a desk, and is not validated for any real-world safety use.
 
 The goal was to get hands-on with PyTorch, object detection pipelines, and the ONNX export workflow relevant to embedded/SoC deployment — not to build a production system. Do not use this to detect FOD on an actual runway, OBVIOUSLY!
 
@@ -26,6 +26,7 @@ This project trains a model to detect it automatically from camera footage.
 ## Context & Prior Work
 
 This project was informed by research on the FOD detection problem in the CV/ML space.
+The dataset used for training is FOD-i2kfx, a single-class airport runway FOD dataset available on Roboflow Universe.
 The most relevant reference is the FOD-A dataset paper:
 
 > Munyer, T., Huang, P-C., Huang, C., & Zhong, X. (2021).
@@ -52,6 +53,8 @@ Published research using YOLOv8 variants on airport FOD datasets reports mAP@0.5
 | ONNX export | 12.3MB |
 
 Training ran for 50 epochs on a laptop GPU. The model is a YOLOv8n fine-tuned on domain-specific data. The mAP@0.5 of 92.8% sits in line with modified YOLOv8 variants published in research on this exact problem.
+
+Images from the dataset, a live demo image, and the results of the training are published in the `assets/` directory.
 
 ---
 
