@@ -131,6 +131,5 @@ but the export step and CPU runtime were validated.
 ## Dataset
 
 [FOD-i2kfx on Roboflow Universe](https://universe.roboflow.com/foreignobjectaerodromes/fod-i2kfx)
-— Not included in this repo.
 
 ---
