@@ -133,3 +133,27 @@ but the export step and CPU runtime were validated.
 [FOD-i2kfx on Roboflow Universe](https://universe.roboflow.com/foreignobjectaerodromes/fod-i2kfx)
 
 ---
+
+## ROS 2 Integration
+
+This project includes a ROS 2 (Jazzy) wrapper around the trained YOLOv8n model,
+structured as two nodes:
+
+- **camera_node** — publishes webcam frames to `/camera/image_raw`
+- **detector_node** — subscribes to `/camera/image_raw`, runs inference, and publishes:
+  - `/fod/detections` (`vision_msgs/Detection2DArray`) — bounding boxes and confidence scores
+  - `/fod/annotated` (`sensor_msgs/Image`) — the frame with boxes drawn, for visualization
+
+### Build and run
+
+```bash
+colcon build --packages-select fod_ros
+source install/setup.bash
+ros2 launch fod_ros fod_detection.launch.py
+```
+
+View detections:
+```bash
+ros2 topic echo /fod/detections
+rqt_image_view   # select /fod/annotated
+```
